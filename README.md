@@ -1,29 +1,63 @@
-# AI Customer Support Agent using LangGraph
+# 🤖 AI Customer Support Agent using LangGraph
 
-## Project Overview
+## 📌 Overview
 
-The AI Customer Support Agent is an intelligent customer service application built using LangGraph, LangChain, FastAPI, Streamlit, and OpenRouter LLMs. It automates customer query handling by leveraging Large Language Models (LLMs) and a company knowledge base to provide accurate, context-aware responses.
+The AI Customer Support Agent is a Generative AI application designed to automate customer support interactions. It leverages Large Language Models (LLMs) to understand customer queries and provide accurate, context-aware responses based on company information.
 
-This project demonstrates the integration of Generative AI with modern backend and frontend technologies to create a scalable customer support solution.
+The project combines LangGraph for workflow orchestration, LangChain for LLM integration, FastAPI for backend APIs, and Streamlit for an interactive user interface. It demonstrates how modern AI technologies can be used to build intelligent customer service solutions.
 
 ---
 
-## Features
+## 🚀 Key Features
 
 * AI-powered customer support assistant
-* LangGraph workflow orchestration
+* Natural language understanding and response generation
+* LangGraph-based workflow management
 * OpenRouter LLM integration
-* Company knowledge base support
-* Context-aware response generation
 * FastAPI REST API backend
-* Interactive Swagger API documentation
-* Streamlit web-based chat interface
-* Real-time customer query handling
-* Modular and extensible architecture
+* Interactive Streamlit web interface
+* Company knowledge base integration
+* Real-time query handling
+* Modular and scalable architecture
+* Easy to extend for real-world business applications
 
 ---
 
-## Tech Stack
+## 🎯 Problem Statement
+
+Customer support teams often spend significant time answering repetitive questions related to refunds, returns, shipping, business hours, and contact information.
+
+This project automates these interactions by providing instant AI-generated responses, improving efficiency and customer experience while reducing manual workload.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+User
+ │
+ ▼
+Streamlit Interface
+ │
+ ▼
+FastAPI Backend
+ │
+ ▼
+LangGraph Workflow
+ │
+ ▼
+OpenRouter LLM
+ │
+ ▼
+Knowledge Base
+ │
+ ▼
+AI Response
+```
+
+---
+
+## 🛠️ Technology Stack
 
 ### Programming Language
 
@@ -35,24 +69,23 @@ This project demonstrates the integration of Generative AI with modern backend a
 * LangGraph
 * OpenRouter
 
-### Backend
+### Backend Development
 
 * FastAPI
 * Uvicorn
 
-### Frontend
+### Frontend Development
 
 * Streamlit
 
-### Development Tools
+### Version Control
 
 * Git
 * GitHub
-* VS Code
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 AI-Customer-Support-Agent/
@@ -73,22 +106,22 @@ AI-Customer-Support-Agent/
 
 ---
 
-## Installation Steps
+## ⚙️ Installation & Setup
 
-### 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/karthikeya-Hub12/AI-Customer-Support-Agent.git
 cd AI-Customer-Support-Agent
 ```
 
-### 2. Create Virtual Environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### 3. Activate Virtual Environment
+### 3. Activate the Virtual Environment
 
 #### Windows
 
@@ -104,23 +137,25 @@ pip install -r requirements.txt
 
 ### 5. Configure Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the project directory:
 
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
+**Note:** Never upload your `.env` file to GitHub.
+
 ---
 
-## Running the Application
+## ▶️ Running the Application
 
-### Start FastAPI Backend
+### Start the FastAPI Backend
 
 ```bash
 uvicorn api:api --reload
 ```
 
-Open Swagger Documentation:
+API Documentation:
 
 ```text
 http://127.0.0.1:8000/docs
@@ -128,13 +163,13 @@ http://127.0.0.1:8000/docs
 
 ---
 
-### Start Streamlit UI
+### Start the Streamlit Interface
 
 ```bash
 streamlit run ui.py
 ```
 
-Open:
+Application URL:
 
 ```text
 http://localhost:8501
@@ -142,21 +177,22 @@ http://localhost:8501
 
 ---
 
-## Example Queries
+## 💬 Sample Queries
+
+Users can interact with the assistant using queries such as:
 
 * What is your refund policy?
-* How can I contact support?
 * What are your business hours?
+* How can I contact support?
 * What is your shipping policy?
 * How long does delivery take?
+* How can I return a product?
 
 ---
 
-## API Endpoint
+## 🔌 API Example
 
-### POST /chat
-
-Request:
+### Request
 
 ```json
 {
@@ -164,7 +200,7 @@ Request:
 }
 ```
 
-Response:
+### Response
 
 ```json
 {
@@ -174,21 +210,7 @@ Response:
 
 ---
 
-## Future Improvements
-
-* Conversation memory
-* Multi-agent workflows
-* Sentiment analysis
-* Order tracking integration
-* Database connectivity
-* Authentication and authorization
-* Cloud deployment (Render/AWS/Azure)
-* RAG (Retrieval-Augmented Generation)
-* Analytics dashboard
-
----
-
-## Key Skills Demonstrated
+## 🎯 Skills Demonstrated
 
 * Generative AI
 * Large Language Models (LLMs)
@@ -198,13 +220,34 @@ Response:
 * FastAPI
 * REST API Development
 * Streamlit
-* Python Development
+* Python Programming
+* API Integration
 * Git & GitHub
 
 ---
 
-## Author
+## 🔮 Future Enhancements
+
+* Conversation Memory
+* Multi-Agent Workflows
+* Sentiment Analysis
+* Order Tracking Integration
+* Database Connectivity
+* Retrieval-Augmented Generation (RAG)
+* Authentication & Authorization
+* Cloud Deployment (AWS, Azure, Render)
+* Analytics Dashboard
+
+---
+
+## 📄 Resume Description
+
+**AI Customer Support Agent using LangGraph**
+
+Developed an AI-powered customer support assistant using LangGraph, LangChain, OpenRouter, FastAPI, and Streamlit. Built REST APIs for intelligent customer query handling, integrated a company knowledge base for context-aware response generation, and designed an interactive web interface for real-time customer interactions.
+
+---
+
+## 👨‍💻 Author
 
 **Thaty Karthikeya**
-
-GitHub: https://github.com/karthikeya-Hub12
